@@ -1,0 +1,132 @@
+@import "reset.css";
+@charset "utf-8";
+
+/* style.css - 기본 스타일 문서, 2012 © yamoo9.com
+---------------------------------------------------------------- */
+/* ///////////////////////////////////////// 
+	=기본 스타일
+///////////////////////////////////////// */
+html {
+  overflow-y: scroll;
+}
+body {
+  font-family: 'NanumGothicWeb';
+  background: #77807f url(../images/wood_bg.jpg) center top;
+  /*background: #77807f url(../images/picjumbo.com_HNCK1240_01.jpg) center top;*/
+  //background-size: cover;
+  color: #fff;
+}
+a:link, a:visited {
+  color: #fff;
+}
+/* ///////////////////////////////////////// 
+	=#page-wrap
+///////////////////////////////////////// */
+#page-wrap {
+  width: 740px;
+  margin: 100px auto;
+}
+h1 {
+  margin-bottom: 1.5em;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 2px #111;
+}
+h1 span {
+  display: block;
+  margin-top: 6px;
+  letter-spacing: 7px;
+  font: 14px Verdana;
+}
+
+/* ///////////////////////////////////////// 
+	=.no-js
+///////////////////////////////////////// */	
+.no-js #tab_design {
+    overflow: hidden;
+    padding: 2em;
+    background: #fff;
+    color: #333;
+}
+.no-js #tab_design li {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.no-js #tab_design a {
+    color: #333;
+}
+.no-js #tab_design img {
+    vertical-align: bottom;
+}
+/* 태블릿: 1024 이하 */
+@media handheld, only screen and (max-width: 1023px) {
+  body header,
+  body #page-wrap {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+/* 스마트 폰: 767px 이하 */
+@media handheld, only screen and (max-width: 767px) {
+
+  /* IE6-8 호환을 위한 코드 */
+  .old .row { min-width: 100px; }
+  .old #page-wrap #tab_design #tab_contents ul li img {
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;  
+  }
+  .old [class^=col] {
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* e: IE6-8 호환을 위한 코드 */
+
+ 
+  }
+  
+   #page-wrap #tab_design #tab_contents ul li img{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+  }
+
+}
+/* 아이폰 4 */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* ///////////////////////////////////////// 
+	=.Global Classes
+///////////////////////////////////////// */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.ie6 .clearfix {
+  height: 1px;
+}
+.ie7 .clearfix {
+  min-height: 1px;
+}
+.blind {
+  visibility: hidden;
+  position: absolute;
+  top: -10000px;
+  height: 1px;
+  width: 1px;
+}
