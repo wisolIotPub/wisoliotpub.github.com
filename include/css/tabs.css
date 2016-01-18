@@ -57,6 +57,7 @@
 	=.tab_contents
 ///////////////////////////////////////// */
 .tabs .tab_contents {
+  /*position: relative;*/
   position: relative;
   min-height: 144px;
   padding: 2em;
