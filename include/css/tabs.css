@@ -57,7 +57,6 @@
 	=.tab_contents
 ///////////////////////////////////////// */
 .tabs .tab_contents {
-  /*position: relative;*/
   position: relative;
   min-height: 144px;
   padding: 2em;
@@ -71,13 +70,14 @@
 	height: 144px;
 }
 .tabs .tab_contents li {
-  min-height: 144px;
+  min-height: 400px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ededed;
   background: #f9f9f9;
 }
 
 .tabs .tab_contents img {
+  /*float: left;*/
   float: left;
-  margin-right: 10px;
+  margin-right: 20px;
 }
